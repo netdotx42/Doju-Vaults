@@ -28,7 +28,7 @@ export function NetworkBanner() {
             : "border-b border-brand/40 bg-black text-brand"
         }
       >
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6">
           <p className="text-sm font-medium leading-snug">
             {mainnet
               ? "Mainnet · real funds. Every transaction asks you to confirm before it is sent."

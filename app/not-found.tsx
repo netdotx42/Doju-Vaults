@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <main id="content" className="mx-auto max-w-lg px-4 py-24">
-      <p className="text-sm font-medium text-brand">404</p>
+      <p className="text-sm font-medium text-violet-300">404</p>
       <h1 className="mt-2 text-3xl font-semibold">This page is not a vault.</h1>
       <Link
         href="/"

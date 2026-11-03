@@ -7,6 +7,12 @@ const config: Config = {
       colors: {
         brand: "#ff5c1a",
         "brand-bright": "#ff8a3d",
+        violet: {
+          200: "#ddd6fe",
+          300: "#c4b5fd",
+          400: "#a78bfa",
+          500: "#8b5cf6",
+        },
       },
       fontFamily: {
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],

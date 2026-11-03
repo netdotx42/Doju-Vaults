@@ -9,9 +9,9 @@ export default async function HomePage() {
   const data = await getMarkets();
   return (
     <main id="content">
-      <section className="relative overflow-hidden border-b border-neutral-900">
-        <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
-          <p className="text-sm font-medium tracking-[0.18em] text-brand">DOJU</p>
+      <section className="relative overflow-hidden border-b border-violet-500/20">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
+          <p className="text-sm font-medium tracking-[0.18em] text-violet-300">DOJU</p>
           <h1 className="mt-3 max-w-xl text-4xl font-semibold tracking-tight sm:text-6xl">
             Solana yield, plainly.
           </h1>
@@ -48,8 +48,8 @@ export default async function HomePage() {
             <li className="rounded-2xl border border-neutral-900 p-4">
               <span className="text-brand">1</span> Connect Phantom, Solflare, or Backpack.
             </li>
-            <li className="rounded-2xl border border-neutral-900 p-4">
-              <span className="text-brand">2</span> Pick a vault and read the rate label.
+            <li className="rounded-2xl border border-violet-500/30 p-4">
+              <span className="text-violet-300">2</span> Pick a vault and read the rate label.
             </li>
             <li className="rounded-2xl border border-neutral-900 p-4">
               <span className="text-brand">3</span> Deposit or withdraw. Mainnet asks first.
@@ -58,11 +58,11 @@ export default async function HomePage() {
         </div>
         <div
           aria-hidden
-          className="pointer-events-none absolute -right-8 top-8 h-48 w-48 rounded-full border border-brand/60 sm:h-72 sm:w-72"
+          className="pointer-events-none absolute -right-8 top-8 hidden h-48 w-48 rounded-full border border-violet-400/50 sm:block sm:h-72 sm:w-72"
         />
         <div
           aria-hidden
-          className="pointer-events-none absolute -right-16 top-16 hidden h-40 w-40 rounded-full border border-brand/30 sm:block"
+          className="pointer-events-none absolute -right-2 top-20 hidden h-36 w-36 rounded-full border border-brand/70 sm:block sm:h-48 sm:w-48"
         />
       </section>
       <VaultBrowser vaults={data.vaults} />

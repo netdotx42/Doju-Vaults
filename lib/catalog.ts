@@ -69,6 +69,9 @@ export function buildViews(
       aggregate: config.aggregate,
       jupiterFromSol: Boolean(config.jupiterFromSol),
       prefer30d: config.prefer30d,
+      iconUrl: null,
+      sparkline: [],
+      trend: null,
     };
   });
 

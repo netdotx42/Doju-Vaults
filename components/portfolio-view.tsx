@@ -210,7 +210,7 @@ export function PortfolioView({ vaults }: { vaults: VaultView[] }) {
               <li key={`${position.slug}-${position.practice}`}>
                 <Link
                   href={`/vaults/${position.slug}`}
-                  className="flex items-center justify-between rounded-2xl border border-neutral-800 px-4 py-3"
+                  className="flex min-h-11 items-center justify-between gap-3 rounded-2xl border border-neutral-800 px-4 py-3 hover:border-violet-400/60"
                 >
                   <span>
                     {position.symbol}

@@ -7,8 +7,9 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <main id="content" className="mx-auto max-w-2xl px-4 py-10 text-sm leading-relaxed text-neutral-300">
-      <h1 className="text-3xl font-semibold text-white">Terms and risks</h1>
+    <main id="content" className="mx-auto max-w-2xl px-4 py-10 text-sm leading-relaxed text-neutral-300 sm:px-6">
+      <p className="text-sm font-medium text-violet-300">Risks</p>
+      <h1 className="mt-2 text-3xl font-semibold text-white">Terms and risks</h1>
       <p className="mt-4">
         Doju Vaults is software, not a broker, advisor, or custodian. Nothing here is financial, legal, or tax advice. Yields can change, stop, or be wrong.
       </p>
