@@ -1,0 +1,17 @@
+node_modules
+.next
+out
+dist
+.env
+.env*.local
+target
+.anchor
+test-ledger
+**/*.rs.bk
+.DS_Store
+*.log
+coverage
+playwright-report
+test-results
+.vercel
+tsconfig.tsbuildinfo

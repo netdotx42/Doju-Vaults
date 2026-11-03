@@ -1,0 +1,42 @@
+{
+  "name": "doju-vaults",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:unit": "tsx --tsconfig tsconfig.json --test lib/*.test.ts",
+    "test:program": "cargo test -p doju_vault -- --test-threads=1",
+    "keys:sync": "bash scripts/sync-program-key.sh"
+  },
+  "dependencies": {
+    "@solana-mobile/wallet-adapter-mobile": "^3.0.0",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/wallet-adapter-backpack": "^0.1.14",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-phantom": "^0.9.30",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.35",
+    "@solana/wallet-adapter-solflare": "^0.6.34",
+    "@solana/wallet-adapter-unsafe-burner": "^0.1.6",
+    "@solana/web3.js": "^1.98.4",
+    "buffer": "^6.0.3",
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.28.0",
+    "eslint-config-next": "^15.5.4",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
