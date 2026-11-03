@@ -1,0 +1,1099 @@
+{
+  "project": "Dujo Vaults",
+  "generatedAt": "2026-11-03T13:11:32.142917Z",
+  "asOf": "2026-11-03",
+  "methodology": "APYs/TVLs pulled from DefiLlama yields API (https://yields.llama.fi/pools) on 2026-11-03 ~13:07 UTC unless noted. apy = apyBase + apyReward (%). Non-DefiLlama figures come from protocol/third-party pages cited per entry. null = could not be verified.",
+  "core": [
+    {
+      "symbol": "SOL",
+      "name": "Solana (wSOL)",
+      "mint": "So11111111111111111111111111111111111111112",
+      "coingeckoId": "solana",
+      "venues": [
+        {
+          "venue": "Kamino Lend - Gauntlet SOL Balanced vault",
+          "defillamaProject": "kamino-lend",
+          "poolMeta": "Gauntlet SOL Balanced",
+          "defillamaPoolId": "9a9cfa6c-8ec9-5d09-857e-aa596901f3ee",
+          "apyBase": 4.404,
+          "apyReward": 0.446,
+          "apy": 4.849,
+          "apyMean30d": 4.942,
+          "tvlUsd": 2276066,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/9a9cfa6c-8ec9-5d09-857e-aa596901f3ee",
+          "apiSource": "https://yields.llama.fi/chart/9a9cfa6c-8ec9-5d09-857e-aa596901f3ee",
+          "asOf": "2026-11-03"
+        },
+        {
+          "venue": "Kamino Lend - SOL/BTC Market (supply)",
+          "defillamaProject": "kamino-lend",
+          "poolMeta": "SOL/BTC Market",
+          "defillamaPoolId": "525b2dab-ea6a-4cbc-a07f-84ce561d1f83",
+          "apyBase": 4.202,
+          "apyReward": null,
+          "apy": 4.202,
+          "apyMean30d": 4.594,
+          "tvlUsd": 21003570,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/525b2dab-ea6a-4cbc-a07f-84ce561d1f83",
+          "apiSource": "https://yields.llama.fi/chart/525b2dab-ea6a-4cbc-a07f-84ce561d1f83",
+          "asOf": "2026-11-03"
+        },
+        {
+          "venue": "Kamino Lend - Allez SOL vault",
+          "defillamaProject": "kamino-lend",
+          "poolMeta": "Allez SOL",
+          "defillamaPoolId": "30645001-26ef-5a9d-a743-c1ee626da65f",
+          "apyBase": 4.142,
+          "apyReward": 0.239,
+          "apy": 4.381,
+          "apyMean30d": 4.575,
+          "tvlUsd": 7490812,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/30645001-26ef-5a9d-a743-c1ee626da65f",
+          "apiSource": "https://yields.llama.fi/chart/30645001-26ef-5a9d-a743-c1ee626da65f",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 4.849,
+      "notes": "Plain SOL earns ~4.2-4.9% lending; staking into an LST (below) earns ~4.9-5.5%."
+    },
+    {
+      "symbol": "JitoSOL",
+      "name": "Jito Staked SOL",
+      "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+      "coingeckoId": "jito-staked-sol",
+      "venues": [
+        {
+          "venue": "Jito liquid staking (staking + MEV)",
+          "defillamaProject": "jito-liquid-staking",
+          "poolMeta": null,
+          "defillamaPoolId": "0e7d0722-9054-4907-8593-567b353c0900",
+          "apyBase": 4.93,
+          "apyReward": null,
+          "apy": 4.93,
+          "apyMean30d": 4.766,
+          "tvlUsd": 950192541,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/0e7d0722-9054-4907-8593-567b353c0900",
+          "apiSource": "https://yields.llama.fi/chart/0e7d0722-9054-4907-8593-567b353c0900",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 4.93,
+      "notes": "Largest Solana LST by TVL."
+    },
+    {
+      "symbol": "mSOL",
+      "name": "Marinade Staked SOL",
+      "mint": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+      "coingeckoId": "msol",
+      "venues": [
+        {
+          "venue": "Marinade liquid staking",
+          "defillamaProject": "marinade-liquid-staking",
+          "poolMeta": null,
+          "defillamaPoolId": "b3f93865-5ec8-4662-90a0-11808e0aa2bd",
+          "apyBase": 5.452,
+          "apyReward": null,
+          "apy": 5.452,
+          "apyMean30d": 5.049,
+          "tvlUsd": 208265642,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/b3f93865-5ec8-4662-90a0-11808e0aa2bd",
+          "apiSource": "https://yields.llama.fi/chart/b3f93865-5ec8-4662-90a0-11808e0aa2bd",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 5.452
+    },
+    {
+      "symbol": "JupSOL",
+      "name": "Jupiter Staked SOL",
+      "mint": "jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v",
+      "coingeckoId": "jupiter-staked-sol",
+      "venues": [
+        {
+          "venue": "Jupiter liquid staking",
+          "defillamaProject": "jupiter-staked-sol",
+          "poolMeta": null,
+          "defillamaPoolId": "52bd72a7-9e81-4112-abb4-71673e8de9bf",
+          "apyBase": 5.157,
+          "apyReward": null,
+          "apy": 5.157,
+          "apyMean30d": 5.278,
+          "tvlUsd": 467119784,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/52bd72a7-9e81-4112-abb4-71673e8de9bf",
+          "apiSource": "https://yields.llama.fi/chart/52bd72a7-9e81-4112-abb4-71673e8de9bf",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 5.157
+    },
+    {
+      "symbol": "INF",
+      "name": "Sanctum Infinity",
+      "mint": "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm",
+      "coingeckoId": "sanctum-infinity",
+      "venues": [
+        {
+          "venue": "Sanctum Infinity (multi-LST pool: staking + swap fees)",
+          "defillamaProject": "sanctum-infinity",
+          "poolMeta": null,
+          "defillamaPoolId": "3075a746-bdd1-4aac-bcd5-b035abee2622",
+          "apyBase": 5.196,
+          "apyReward": null,
+          "apy": 5.196,
+          "apyMean30d": 5.41,
+          "tvlUsd": 177752101,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/3075a746-bdd1-4aac-bcd5-b035abee2622",
+          "apiSource": "https://yields.llama.fi/chart/3075a746-bdd1-4aac-bcd5-b035abee2622",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 5.196
+    },
+    {
+      "symbol": "dSOL",
+      "name": "Drift Staked SOL",
+      "mint": "Dso1bDeDjCQxTrWHqUUi63oBvV7Mdm6WaobLbQ7gnPQ",
+      "coingeckoId": "drift-staked-sol",
+      "venues": [
+        {
+          "venue": "Drift liquid staking",
+          "defillamaProject": "drift-staked-sol",
+          "poolMeta": null,
+          "defillamaPoolId": "296651fc-25f6-4434-b8ec-17c2af9808da",
+          "apyBase": 4.915,
+          "apyReward": null,
+          "apy": 4.915,
+          "apyMean30d": 4.941,
+          "tvlUsd": 257409284,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/296651fc-25f6-4434-b8ec-17c2af9808da",
+          "apiSource": "https://yields.llama.fi/chart/296651fc-25f6-4434-b8ec-17c2af9808da",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 4.915
+    },
+    {
+      "symbol": "JUP",
+      "name": "Jupiter",
+      "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+      "coingeckoId": "jupiter-exchange-solana",
+      "venues": [
+        {
+          "venue": "Jupiter DAO staking (Active Staking Rewards, vote.jup.ag)",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": 18.0,
+          "tvlUsd": null,
+          "source": "https://cryptobriefing.com/jupiter-q3-staking-rewards-50m-jup/",
+          "asOf": "2026-11-03",
+          "note": "ESTIMATE only (~18% per Crypto Briefing, Oct 2026). Not a fixed APY: 50M JUP/quarter split across ~1.1B staked JUP; paid in staked JUP; 7-day unstake. Docs: https://docs.jup.ag/user-docs/more/dao/asr"
+        },
+        {
+          "venue": "Orca JUP-SOL CLMM LP (fee APY, IL risk)",
+          "defillamaProject": "orca-dex",
+          "poolMeta": null,
+          "defillamaPoolId": "18da9637-00b2-4eda-bf76-942f1acbfc28",
+          "apyBase": 22.613,
+          "apyReward": null,
+          "apy": 22.613,
+          "apyMean30d": 44.261,
+          "tvlUsd": 621039,
+          "ilRisk": "yes",
+          "source": "https://defillama.com/yields/pool/18da9637-00b2-4eda-bf76-942f1acbfc28",
+          "apiSource": "https://yields.llama.fi/chart/18da9637-00b2-4eda-bf76-942f1acbfc28",
+          "asOf": "2026-11-03"
+        },
+        {
+          "venue": "Kamino Liquidity JUP-SOL automated LP (IL risk)",
+          "defillamaProject": "kamino-liquidity",
+          "poolMeta": null,
+          "defillamaPoolId": "2311da1c-3d89-43cb-afdb-e19edfc01b1e",
+          "apyBase": 15.997,
+          "apyReward": null,
+          "apy": 15.997,
+          "apyMean30d": 71.289,
+          "tvlUsd": 738987,
+          "ilRisk": "yes",
+          "source": "https://defillama.com/yields/pool/2311da1c-3d89-43cb-afdb-e19edfc01b1e",
+          "apiSource": "https://yields.llama.fi/chart/2311da1c-3d89-43cb-afdb-e19edfc01b1e",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 22.613,
+      "notes": "Single-sided JUP lending yields ~0% on Solana; real yield comes from DAO staking or LPs."
+    },
+    {
+      "symbol": "JTO",
+      "name": "Jito Governance",
+      "mint": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
+      "coingeckoId": "jito-governance-token",
+      "venues": [
+        {
+          "venue": "Kyros kyJTO (Jito restaking vault)",
+          "defillamaProject": "kyros",
+          "poolMeta": null,
+          "defillamaPoolId": "aaa2c1f0-2651-4261-8efb-9090a37fe091",
+          "apyBase": 3.899,
+          "apyReward": null,
+          "apy": 3.899,
+          "apyMean30d": 4.247,
+          "tvlUsd": 601512,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/aaa2c1f0-2651-4261-8efb-9090a37fe091",
+          "apiSource": "https://yields.llama.fi/chart/aaa2c1f0-2651-4261-8efb-9090a37fe091",
+          "asOf": "2026-11-03"
+        },
+        {
+          "venue": "Orca JTO-JitoSOL CLMM LP (IL risk)",
+          "defillamaProject": "orca-dex",
+          "poolMeta": null,
+          "defillamaPoolId": "cc5c8175-bdfa-442f-870b-6f2cdec94854",
+          "apyBase": 7.239,
+          "apyReward": null,
+          "apy": 7.239,
+          "apyMean30d": 16.227,
+          "tvlUsd": 942292,
+          "ilRisk": "yes",
+          "source": "https://defillama.com/yields/pool/cc5c8175-bdfa-442f-870b-6f2cdec94854",
+          "apiSource": "https://yields.llama.fi/chart/cc5c8175-bdfa-442f-870b-6f2cdec94854",
+          "asOf": "2026-11-03"
+        },
+        {
+          "venue": "Kamino Liquidity JTO-JitoSOL (IL risk)",
+          "defillamaProject": "kamino-liquidity",
+          "poolMeta": null,
+          "defillamaPoolId": "059175e4-9cc8-4703-944f-b54ecaf02f00",
+          "apyBase": 4.97,
+          "apyReward": null,
+          "apy": 4.97,
+          "apyMean30d": 11.962,
+          "tvlUsd": 846345,
+          "ilRisk": "yes",
+          "source": "https://defillama.com/yields/pool/059175e4-9cc8-4703-944f-b54ecaf02f00",
+          "apiSource": "https://yields.llama.fi/chart/059175e4-9cc8-4703-944f-b54ecaf02f00",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 7.239
+    }
+  ],
+  "coreAlternates": [
+    {
+      "symbol": "hSOL",
+      "name": "Helius Staked SOL",
+      "mint": "he1iusmfkpAdwvxLNGV8Y1iSbj4rUy6yMhEA3fotn9A",
+      "coingeckoId": "helius-staked-sol",
+      "venues": [
+        {
+          "venue": "Helius liquid staking",
+          "defillamaProject": "helius-staked-sol",
+          "poolMeta": null,
+          "defillamaPoolId": "d7e101d6-8e6c-4348-9c5f-62398872a301",
+          "apyBase": 4.988,
+          "apyReward": null,
+          "apy": 4.988,
+          "apyMean30d": 5.059,
+          "tvlUsd": 89072090,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/d7e101d6-8e6c-4348-9c5f-62398872a301",
+          "apiSource": "https://yields.llama.fi/chart/d7e101d6-8e6c-4348-9c5f-62398872a301",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 4.988
+    },
+    {
+      "symbol": "RAY",
+      "name": "Raydium",
+      "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+      "coingeckoId": "raydium",
+      "venues": [
+        {
+          "venue": "Raydium RAY single-sided staking",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": 3.74,
+          "tvlUsd": null,
+          "source": "https://raydium.io/staking/",
+          "asOf": "2026-11-03",
+          "note": "Figure reported for raydium.io/staking by web search on 2026-11-03; not read directly from an API."
+        },
+        {
+          "venue": "Raydium RAY-USDC standard AMM LP (IL risk)",
+          "defillamaProject": "raydium-amm",
+          "poolMeta": "Standard - 0.25%",
+          "defillamaPoolId": "8d1c0b44-a5ce-421c-b899-bf489159aa0f",
+          "apyBase": 4.93,
+          "apyReward": null,
+          "apy": 4.93,
+          "apyMean30d": 14.06,
+          "tvlUsd": 5965326,
+          "ilRisk": "yes",
+          "source": "https://defillama.com/yields/pool/8d1c0b44-a5ce-421c-b899-bf489159aa0f",
+          "apiSource": "https://yields.llama.fi/chart/8d1c0b44-a5ce-421c-b899-bf489159aa0f",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 4.93
+    },
+    {
+      "symbol": "PYTH",
+      "name": "Pyth Network",
+      "mint": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+      "coingeckoId": "pyth-network",
+      "venues": [
+        {
+          "venue": "Pyth Oracle Integrity Staking",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": 0.0,
+          "tvlUsd": null,
+          "source": "https://docs.pyth.network/oracle-integrity-staking",
+          "asOf": "2026-11-03",
+          "note": "EXCLUDED from top 8: OIS rewards set to 0 on 22 Apr 2026 (OP-PIP-103)."
+        }
+      ],
+      "bestApy": 0.0
+    },
+    {
+      "symbol": "BONK",
+      "name": "Bonk",
+      "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+      "coingeckoId": "bonk",
+      "venues": [
+        {
+          "venue": "Project 0 (ex-marginfi) lending",
+          "defillamaProject": "project-0",
+          "poolMeta": null,
+          "defillamaPoolId": "f3f68d42-9e1c-4c7c-b01c-bf35e1ac757f",
+          "apyBase": 0.001,
+          "apyReward": null,
+          "apy": 0.001,
+          "apyMean30d": 0.001,
+          "tvlUsd": 783911,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/f3f68d42-9e1c-4c7c-b01c-bf35e1ac757f",
+          "apiSource": "https://yields.llama.fi/chart/f3f68d42-9e1c-4c7c-b01c-bf35e1ac757f",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 0.001,
+      "notes": "EXCLUDED: no meaningful on-chain yield (~0.001%)."
+    }
+  ],
+  "stablecoins": [
+    {
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "coingeckoId": "usd-coin",
+      "venues": [
+        {
+          "venue": "Jupiter Lend - Earn (USDC)",
+          "defillamaProject": "jupiter-lend",
+          "poolMeta": "Earn",
+          "defillamaPoolId": "d783c8df-e2ed-44b4-8317-161ccc1b5f06",
+          "apyBase": 5.369,
+          "apyReward": null,
+          "apy": 5.369,
+          "apyMean30d": 6.301,
+          "tvlUsd": 470358160,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/d783c8df-e2ed-44b4-8317-161ccc1b5f06",
+          "apiSource": "https://yields.llama.fi/chart/d783c8df-e2ed-44b4-8317-161ccc1b5f06",
+          "asOf": "2026-11-03"
+        },
+        {
+          "venue": "Kamino Lend - Allez USDC vault",
+          "defillamaProject": "kamino-lend",
+          "poolMeta": "Allez USDC",
+          "defillamaPoolId": "89df1643-892a-5b7d-88fd-5a86a38c49f3",
+          "apyBase": 5.479,
+          "apyReward": 0.376,
+          "apy": 5.855,
+          "apyMean30d": 6.21,
+          "tvlUsd": 10816989,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/89df1643-892a-5b7d-88fd-5a86a38c49f3",
+          "apiSource": "https://yields.llama.fi/chart/89df1643-892a-5b7d-88fd-5a86a38c49f3",
+          "asOf": "2026-11-03"
+        },
+        {
+          "venue": "Kamino Lend - RockawayX RWA USDC vault",
+          "defillamaProject": "kamino-lend",
+          "poolMeta": "RockawayX RWA USDC",
+          "defillamaPoolId": "8c4bbc10-5763-5d5b-8450-05ddd24b1c33",
+          "apyBase": 6.009,
+          "apyReward": 0.066,
+          "apy": 6.075,
+          "apyMean30d": 5.794,
+          "tvlUsd": 49955577,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/8c4bbc10-5763-5d5b-8450-05ddd24b1c33",
+          "apiSource": "https://yields.llama.fi/chart/8c4bbc10-5763-5d5b-8450-05ddd24b1c33",
+          "asOf": "2026-11-03"
+        },
+        {
+          "venue": "Kamino Lend - Institutional Commodity Yield vault",
+          "defillamaProject": "kamino-lend",
+          "poolMeta": "Kamino Institutional Commodity Yield",
+          "defillamaPoolId": "6d681636-0c6d-5ad3-b05f-46117f1f02ae",
+          "apyBase": 8.234,
+          "apyReward": null,
+          "apy": 8.234,
+          "apyMean30d": 7.898,
+          "tvlUsd": 47430783,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/6d681636-0c6d-5ad3-b05f-46117f1f02ae",
+          "apiSource": "https://yields.llama.fi/chart/6d681636-0c6d-5ad3-b05f-46117f1f02ae",
+          "asOf": "2026-11-03",
+          "note": "Higher yield; check vault collateral/curator risk."
+        },
+        {
+          "venue": "Kamino Lend - Plume x Re7 USDC vault",
+          "defillamaProject": "kamino-lend",
+          "poolMeta": "Plume x Re7 USDC",
+          "defillamaPoolId": "0ba9f678-063d-57ec-8afd-bb9a36e55657",
+          "apyBase": 4.046,
+          "apyReward": 4.172,
+          "apy": 8.218,
+          "apyMean30d": 8.73,
+          "tvlUsd": 8121289,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/0ba9f678-063d-57ec-8afd-bb9a36e55657",
+          "apiSource": "https://yields.llama.fi/chart/0ba9f678-063d-57ec-8afd-bb9a36e55657",
+          "asOf": "2026-11-03",
+          "note": "~half of APY is token rewards."
+        },
+        {
+          "venue": "Kamino Lend - Steakhouse USDC vault",
+          "defillamaProject": "kamino-lend",
+          "poolMeta": "Steakhouse USDC",
+          "defillamaPoolId": "058afa77-d1cc-537c-9c28-1da002b45631",
+          "apyBase": 2.843,
+          "apyReward": null,
+          "apy": 2.843,
+          "apyMean30d": 5.109,
+          "tvlUsd": 16378667,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/058afa77-d1cc-537c-9c28-1da002b45631",
+          "apiSource": "https://yields.llama.fi/chart/058afa77-d1cc-537c-9c28-1da002b45631",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 8.234
+    },
+    {
+      "symbol": "USDT",
+      "name": "Tether USD",
+      "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "coingeckoId": "tether",
+      "venues": [
+        {
+          "venue": "Jupiter Lend - Earn (USDT)",
+          "defillamaProject": "jupiter-lend",
+          "poolMeta": "Earn",
+          "defillamaPoolId": "a2fbc7ec-22c2-43fe-aa42-49f854aa940d",
+          "apyBase": 5.285,
+          "apyReward": null,
+          "apy": 5.285,
+          "apyMean30d": 4.657,
+          "tvlUsd": 16159553,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/a2fbc7ec-22c2-43fe-aa42-49f854aa940d",
+          "apiSource": "https://yields.llama.fi/chart/a2fbc7ec-22c2-43fe-aa42-49f854aa940d",
+          "asOf": "2026-11-03"
+        },
+        {
+          "venue": "Kamino Lend - Galaxy USDT vault",
+          "defillamaProject": "kamino-lend",
+          "poolMeta": "Galaxy USDT",
+          "defillamaPoolId": "bbe7776a-b8fe-545e-9db0-434e64324c10",
+          "apyBase": 9.049,
+          "apyReward": null,
+          "apy": 9.049,
+          "apyMean30d": 4.636,
+          "tvlUsd": 2588704,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/bbe7776a-b8fe-545e-9db0-434e64324c10",
+          "apiSource": "https://yields.llama.fi/chart/bbe7776a-b8fe-545e-9db0-434e64324c10",
+          "asOf": "2026-11-03",
+          "note": "Spot APY spiky; 30d mean much lower."
+        },
+        {
+          "venue": "Save (ex-Solend) Main Pool",
+          "defillamaProject": "save",
+          "poolMeta": "Main Pool",
+          "defillamaPoolId": "7ec9f4ba-803c-4935-97e2-342aa75b4ff4",
+          "apyBase": 5.12,
+          "apyReward": null,
+          "apy": 5.12,
+          "apyMean30d": 3.327,
+          "tvlUsd": 359997,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/7ec9f4ba-803c-4935-97e2-342aa75b4ff4",
+          "apiSource": "https://yields.llama.fi/chart/7ec9f4ba-803c-4935-97e2-342aa75b4ff4",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 9.049
+    }
+  ],
+  "rwa": [
+    {
+      "symbol": "USDY",
+      "name": "Ondo US Dollar Yield",
+      "mint": "A1KLoBrKBde8Ty9qtNQUtq3C2ortoC3u7twggz7sEto6",
+      "coingeckoId": "ondo-us-dollar-yield",
+      "venues": [
+        {
+          "venue": "Ondo USDY (accruing, price-appreciating)",
+          "defillamaProject": "ondo-yield-assets",
+          "poolMeta": "US Dollar Yield",
+          "defillamaPoolId": "00b83068-9f87-4411-b5d7-5d2ff48c40c4",
+          "apyBase": 3.75,
+          "apyReward": null,
+          "apy": 3.75,
+          "apyMean30d": 3.695,
+          "tvlUsd": 142822960,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/00b83068-9f87-4411-b5d7-5d2ff48c40c4",
+          "apiSource": "https://yields.llama.fi/chart/00b83068-9f87-4411-b5d7-5d2ff48c40c4",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 3.75,
+      "notes": "Tokenized short-term US Treasuries/bank deposits. Non-US persons; transferable after 40/50-day lock on mint."
+    },
+    {
+      "symbol": "ONyc",
+      "name": "OnRe Tokenized Reinsurance",
+      "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+      "coingeckoId": null,
+      "venues": [
+        {
+          "venue": "OnRe ONyc",
+          "defillamaProject": "onre",
+          "poolMeta": null,
+          "defillamaPoolId": "7083d6a5-e3cb-4eeb-8204-f1b735e4ecbb",
+          "apyBase": 11.02,
+          "apyReward": null,
+          "apy": 11.02,
+          "apyMean30d": 11.02,
+          "tvlUsd": 286122699,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/7083d6a5-e3cb-4eeb-8204-f1b735e4ecbb",
+          "apiSource": "https://yields.llama.fi/chart/7083d6a5-e3cb-4eeb-8204-f1b735e4ecbb",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 11.02,
+      "notes": "Reinsurance-premium yield; higher risk profile than T-bills."
+    },
+    {
+      "symbol": "syrupUSDC",
+      "name": "Maple Syrup USDC (Solana)",
+      "mint": "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+      "coingeckoId": null,
+      "venues": [
+        {
+          "venue": "Maple syrupUSDC (yield source, Ethereum pool)",
+          "defillamaProject": "maple",
+          "poolMeta": "Syrup USDC",
+          "defillamaPoolId": "43641cf5-a92e-416b-bce9-27113d3c0db6",
+          "apyBase": 5.078,
+          "apyReward": null,
+          "apy": 5.078,
+          "apyMean30d": 5.163,
+          "tvlUsd": 2499022505,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/43641cf5-a92e-416b-bce9-27113d3c0db6",
+          "apiSource": "https://yields.llama.fi/chart/43641cf5-a92e-416b-bce9-27113d3c0db6",
+          "asOf": "2026-11-03",
+          "note": "Underlying yield is set by Maple's Ethereum pool; Solana token is the cross-chain representation and accrues the same price-per-share. Solana-side TVL not separately reported by DefiLlama."
+        },
+        {
+          "venue": "Reflect Tranches - syrupUSDC Senior (Solana)",
+          "defillamaProject": "reflect-tranches",
+          "poolMeta": "Senior",
+          "defillamaPoolId": "c2fb0563-8beb-5f1a-9086-80dc91cb2403",
+          "apyBase": 2.797,
+          "apyReward": null,
+          "apy": 2.797,
+          "apyMean30d": 10.199,
+          "tvlUsd": 1768551,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/c2fb0563-8beb-5f1a-9086-80dc91cb2403",
+          "apiSource": "https://yields.llama.fi/chart/c2fb0563-8beb-5f1a-9086-80dc91cb2403",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 5.078,
+      "notes": "Overcollateralized institutional credit (private credit, not strictly T-bills)."
+    },
+    {
+      "symbol": "OUSG",
+      "name": "Ondo Short-Term US Gov Bond Fund",
+      "mint": "i7u4r16TcsJTgq1kAG8opmVZyVnAKBwLKu6ZPMwzxNc",
+      "coingeckoId": "ousg",
+      "venues": [
+        {
+          "venue": "Ondo OUSG",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": 3.74,
+          "tvlUsd": null,
+          "source": "https://ondo.finance/ousg",
+          "asOf": "2026-11-03",
+          "note": "APY 3.74% as of 2026-11-02 per ondo.finance (via web search). Not in DefiLlama Solana pools; Solana TVL unverified. Qualified purchasers / KYC only."
+        }
+      ],
+      "bestApy": 3.74
+    },
+    {
+      "symbol": "CETES",
+      "name": "Etherfuse CETES Stablebond",
+      "mint": "CETES7CKqqKQizuSN6iWQwmTeFRjbJR6Vw2XRKfEDR8f",
+      "coingeckoId": null,
+      "venues": [
+        {
+          "venue": "Etherfuse Stablebonds",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": 5.55,
+          "tvlUsd": null,
+          "source": "https://app.etherfuse.com/bonds/cetes",
+          "asOf": "2026-11-03",
+          "note": "5.55% APY as of 2026-10-29 per Etherfuse (via web search); MXN-denominated (FX risk). TVL unverified."
+        }
+      ],
+      "bestApy": 5.55
+    },
+    {
+      "symbol": "USTRY",
+      "name": "Etherfuse USTRY Stablebond",
+      "mint": "USTRYnGgcHAhdWsanv8BG6vHGd4p7UGgoB9NRd8ei7j",
+      "coingeckoId": null,
+      "venues": [
+        {
+          "venue": "Etherfuse Stablebonds",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": 3.69,
+          "tvlUsd": null,
+          "source": "https://app.etherfuse.com/bonds/ustry",
+          "asOf": "2026-11-03",
+          "note": "3.69% APY as of 2026-10-29 per Etherfuse (via web search). TVL unverified."
+        }
+      ],
+      "bestApy": 3.69
+    },
+    {
+      "symbol": "PRIME (Hastra)",
+      "name": "Hastra PRIME vault (Figure HELOC-backed)",
+      "mint": "8fr7WGTVFszfyNWRMXj6fRjZZAnDwmXwEpCrtzmUkdih",
+      "coingeckoId": null,
+      "venues": [
+        {
+          "venue": "Hastra PRIME",
+          "defillamaProject": "hastra",
+          "poolMeta": null,
+          "defillamaPoolId": "76bb34c2-e68a-4398-9fba-d8a14c0caa44",
+          "apyBase": 6.297,
+          "apyReward": null,
+          "apy": 6.297,
+          "apyMean30d": 6.158,
+          "tvlUsd": 112401880,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/76bb34c2-e68a-4398-9fba-d8a14c0caa44",
+          "apiSource": "https://yields.llama.fi/chart/76bb34c2-e68a-4398-9fba-d8a14c0caa44",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 6.297,
+      "notes": "Mint listed is the underlying deposit token (wYLDS) per DefiLlama underlyingTokens; vault receipt mint not verified."
+    },
+    {
+      "symbol": "BUIDL",
+      "name": "BlackRock USD Institutional Digital Liquidity Fund",
+      "mint": "GyWgeqpy5GueU2YbkE8xqUeVEokCMMCEeUrfbtMw6phr",
+      "coingeckoId": null,
+      "venues": [
+        {
+          "venue": "BlackRock BUIDL (Securitize)",
+          "defillamaProject": "blackrock-buidl",
+          "poolMeta": null,
+          "defillamaPoolId": "590d770e-ed5d-4c8d-ad96-5178c2072295",
+          "apyBase": 3.853,
+          "apyReward": null,
+          "apy": 3.853,
+          "apyMean30d": 3.372,
+          "tvlUsd": 804903651,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/590d770e-ed5d-4c8d-ad96-5178c2072295",
+          "apiSource": "https://yields.llama.fi/chart/590d770e-ed5d-4c8d-ad96-5178c2072295",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 3.853,
+      "notes": "Permissioned (whitelisted institutions only). Display-only for a retail vault. DefiLlama tags this pool chain=Solana but $805M likely reflects fund-level TVL, not Solana-only supply; treat TVL as unverified for Solana."
+    },
+    {
+      "symbol": "ACRED",
+      "name": "Apollo Diversified Credit Securitize Fund",
+      "mint": "FubtUcvhSCr3VPXEcxouoQjKQ7NWTCzXyECe76B7L3f8",
+      "coingeckoId": null,
+      "venues": [
+        {
+          "venue": "Securitize ACRED",
+          "defillamaProject": "apollo-diversified-credit-securitize-fund",
+          "poolMeta": null,
+          "defillamaPoolId": "41fc35e6-953a-4ecd-a500-3db322050568",
+          "apyBase": 4.239,
+          "apyReward": null,
+          "apy": 4.239,
+          "apyMean30d": 0.435,
+          "tvlUsd": 18358267,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/41fc35e6-953a-4ecd-a500-3db322050568",
+          "apiSource": "https://yields.llama.fi/chart/41fc35e6-953a-4ecd-a500-3db322050568",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 4.239,
+      "notes": "Permissioned; spot APY far above 30d mean (data noisy)."
+    },
+    {
+      "symbol": "VBILL",
+      "name": "VanEck Treasury Fund",
+      "mint": "34mJztT9am2jybSukvjNqRjgJBZqHJsHnivArx1P4xy1",
+      "coingeckoId": null,
+      "venues": [
+        {
+          "venue": "VanEck VBILL",
+          "defillamaProject": "vaneck-treasury-fund",
+          "poolMeta": null,
+          "defillamaPoolId": "5857cb89-c6e0-4a53-84b3-9e4d3135fbb5",
+          "apyBase": 3.983,
+          "apyReward": null,
+          "apy": 3.983,
+          "apyMean30d": 3.404,
+          "tvlUsd": 4269864,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/5857cb89-c6e0-4a53-84b3-9e4d3135fbb5",
+          "apiSource": "https://yields.llama.fi/chart/5857cb89-c6e0-4a53-84b3-9e4d3135fbb5",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 3.983,
+      "notes": "Permissioned."
+    },
+    {
+      "symbol": "USCC",
+      "name": "Superstate Crypto Carry Fund",
+      "mint": "BTRR3sj1Bn2ZjuemgbeQ6SCtf84iXS81CS7UDTSxUCaK",
+      "coingeckoId": null,
+      "venues": [
+        {
+          "venue": "Superstate USCC",
+          "defillamaProject": "bitwise-uscc",
+          "poolMeta": null,
+          "defillamaPoolId": "04bf0e7d-904a-4d42-9a25-bb1b5634e863",
+          "apyBase": 4.877,
+          "apyReward": null,
+          "apy": 4.877,
+          "apyMean30d": 5.036,
+          "tvlUsd": 5080277,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/04bf0e7d-904a-4d42-9a25-bb1b5634e863",
+          "apiSource": "https://yields.llama.fi/chart/04bf0e7d-904a-4d42-9a25-bb1b5634e863",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 4.877,
+      "notes": "Permissioned; basis-trade yield."
+    }
+  ],
+  "rwaExcluded": [
+    {
+      "symbol": "BENJI",
+      "note": "Franklin BENJI/FOBXX: no Solana mint found in Jupiter token list or DefiLlama Solana pools on 2026-11-03; excluded."
+    },
+    {
+      "symbol": "PRCL",
+      "note": "Parcl is a real-estate perps protocol token, not a yield-bearing RWA; no yield pool found."
+    }
+  ],
+  "depin": [
+    {
+      "symbol": "HNT",
+      "name": "Helium",
+      "mint": "hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux",
+      "coingeckoId": "helium",
+      "venues": [
+        {
+          "venue": "Helium veHNT lock + delegate (heliumvote.com / Realms)",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": null,
+          "tvlUsd": null,
+          "source": "https://blog.helium.com/hip-141-simplifying-helium-governance-7dd02b854a26",
+          "asOf": "2026-11-03",
+          "note": "APY null: no published rate. 6% of HNT emissions shared pro-rata by delegated veHNT that votes in 2 of last 4 votes; re-delegate annually (July)."
+        },
+        {
+          "venue": "Raydium HNT-WSOL LP (IL risk)",
+          "defillamaProject": "raydium-amm",
+          "poolMeta": "Standard - 0.25%",
+          "defillamaPoolId": "4dcc59d7-0c21-4484-a2af-539181a9f8cd",
+          "apyBase": 19.96,
+          "apyReward": null,
+          "apy": 19.96,
+          "apyMean30d": 23.875,
+          "tvlUsd": 306576,
+          "ilRisk": "yes",
+          "source": "https://defillama.com/yields/pool/4dcc59d7-0c21-4484-a2af-539181a9f8cd",
+          "apiSource": "https://yields.llama.fi/chart/4dcc59d7-0c21-4484-a2af-539181a9f8cd",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 19.96
+    },
+    {
+      "symbol": "RENDER",
+      "name": "Render",
+      "mint": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof",
+      "coingeckoId": "render-token",
+      "venues": [
+        {
+          "venue": "Project 0 (ex-marginfi) RENDER lending",
+          "defillamaProject": "project-0",
+          "poolMeta": null,
+          "defillamaPoolId": "dd6fd7f6-77d4-4a97-8cae-cd3d081a3b04",
+          "apyBase": 0.061,
+          "apyReward": null,
+          "apy": 0.061,
+          "apyMean30d": 0.075,
+          "tvlUsd": 214751,
+          "ilRisk": "no",
+          "source": "https://defillama.com/yields/pool/dd6fd7f6-77d4-4a97-8cae-cd3d081a3b04",
+          "apiSource": "https://yields.llama.fi/chart/dd6fd7f6-77d4-4a97-8cae-cd3d081a3b04",
+          "asOf": "2026-11-03"
+        },
+        {
+          "venue": "Raydium WSOL-RENDER CLMM LP",
+          "defillamaProject": "raydium-amm",
+          "poolMeta": "Concentrated - 0.25%",
+          "defillamaPoolId": "a6441945-9eff-4d1b-91dc-2134cd9cdd35",
+          "apyBase": 135.55,
+          "apyReward": null,
+          "apy": 135.55,
+          "apyMean30d": 72.387,
+          "tvlUsd": 332958,
+          "ilRisk": "yes",
+          "source": "https://defillama.com/yields/pool/a6441945-9eff-4d1b-91dc-2134cd9cdd35",
+          "apiSource": "https://yields.llama.fi/chart/a6441945-9eff-4d1b-91dc-2134cd9cdd35",
+          "asOf": "2026-11-03",
+          "note": "Spot 135% is volatile; use apyMean30d. High IL risk."
+        }
+      ],
+      "bestApy": 135.55,
+      "notes": "No native RENDER staking on Solana."
+    },
+    {
+      "symbol": "GRASS",
+      "name": "Grass",
+      "mint": "Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs",
+      "coingeckoId": "grass",
+      "venues": [
+        {
+          "venue": "Grass router delegation (grassfoundation.io/stake)",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": 5.88,
+          "tvlUsd": null,
+          "source": "https://stakin.com/stake/grass",
+          "asOf": "2026-11-03",
+          "note": "Est. APR 5.88% shown by Stakin (router operator, 4% fee) on 2026-11-03; protocol says APR is an estimate, not guaranteed; 7-day unstake."
+        },
+        {
+          "venue": "Raydium WSOL-GRASS CLMM LP",
+          "defillamaProject": "raydium-amm",
+          "poolMeta": "Concentrated - 0.25%",
+          "defillamaPoolId": "acd2a7e0-55ee-46ee-a1b2-66298b60cb0e",
+          "apyBase": 0.71,
+          "apyReward": null,
+          "apy": 0.71,
+          "apyMean30d": 2.218,
+          "tvlUsd": 436668,
+          "ilRisk": "yes",
+          "source": "https://defillama.com/yields/pool/acd2a7e0-55ee-46ee-a1b2-66298b60cb0e",
+          "apiSource": "https://yields.llama.fi/chart/acd2a7e0-55ee-46ee-a1b2-66298b60cb0e",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 5.88
+    },
+    {
+      "symbol": "NOS",
+      "name": "Nosana",
+      "mint": "nosXBVoaCTtYdLvKY6Csb4AC8JCdQKKAaWYtx2ZMoo7",
+      "coingeckoId": "nosana",
+      "venues": [
+        {
+          "venue": "Nosana staking (stake.nosana.com)",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": null,
+          "tvlUsd": 3778755,
+          "source": "https://nosana.com/nosana-token/",
+          "asOf": "2026-11-03",
+          "note": "APY null (dynamic, shown only on dashboard). TVL = 'USD Value Staked' on nosana.com. Passive staking pool sunsets ~28-29 Nov 2026 under NNP-0001 (proposal projected ~4% APR before sunset)."
+        },
+        {
+          "venue": "Raydium NOS-USDC CLMM LP (IL risk)",
+          "defillamaProject": "raydium-amm",
+          "poolMeta": "Concentrated - 0.4%",
+          "defillamaPoolId": "7222bf12-2d1d-4ab9-9c46-37a9c32eb347",
+          "apyBase": 12.46,
+          "apyReward": null,
+          "apy": 12.46,
+          "apyMean30d": 44.86,
+          "tvlUsd": 579801,
+          "ilRisk": "yes",
+          "source": "https://defillama.com/yields/pool/7222bf12-2d1d-4ab9-9c46-37a9c32eb347",
+          "apiSource": "https://yields.llama.fi/chart/7222bf12-2d1d-4ab9-9c46-37a9c32eb347",
+          "asOf": "2026-11-03"
+        }
+      ],
+      "bestApy": 12.46
+    },
+    {
+      "symbol": "IO",
+      "name": "io.net",
+      "mint": "BZLbGTNCSFfoth2GYDtwr7e4imWzpR5jqcUuGEwr646K",
+      "coingeckoId": "io",
+      "venues": [
+        {
+          "venue": "io.net co-staking (GPU suppliers)",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": null,
+          "tvlUsd": null,
+          "source": "https://io.net/docs/guides/staking/io-staking",
+          "asOf": "2026-11-03",
+          "note": "APY null: rewards depend on device/uptime/offer; no official rate."
+        }
+      ],
+      "bestApy": null
+    },
+    {
+      "symbol": "HONEY",
+      "name": "Hivemapper",
+      "mint": "4vMsoUT2BWatFweudnQM1xedRLfJgJ7hswhcpz4xgBTy",
+      "coingeckoId": "hivemapper",
+      "venues": [
+        {
+          "venue": "Hivemapper regional HONEY staking",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": null,
+          "tvlUsd": null,
+          "source": "https://medium.com/hivemapper-foundation/map-improvement-proposal-25-mip-25-d07c7239b10e",
+          "asOf": "2026-11-03",
+          "note": "APY null: weekly payout from 10% of emissions, varies by region/stake share."
+        }
+      ],
+      "bestApy": null
+    },
+    {
+      "symbol": "MOBILE",
+      "name": "Helium Mobile",
+      "mint": "mb1eu7TzEc71KxDpsmsKoucSSuuoGLv1drys1oP2jh6",
+      "coingeckoId": "helium-mobile",
+      "venues": [
+        {
+          "venue": "n/a",
+          "defillamaPoolId": null,
+          "apyBase": null,
+          "apyReward": null,
+          "apy": null,
+          "tvlUsd": null,
+          "source": "https://blog.helium.com/hip-141-simplifying-helium-governance-7dd02b854a26",
+          "asOf": "2026-11-03",
+          "note": "No yield: veMOBILE retired by HIP-141; holders can convert to HNT. Not recommended for the vault."
+        }
+      ],
+      "bestApy": null
+    }
+  ],
+  "liveApis": {
+    "defillamaYieldsAll": {
+      "url": "https://yields.llama.fi/pools",
+      "note": "~11 MB, all chains; filter chain=='Solana' and pool id. No key. Fields: pool, apy, apyBase, apyReward, apyMean30d, tvlUsd. Better fetched server-side/cached."
+    },
+    "defillamaPoolHistory": {
+      "url": "https://yields.llama.fi/chart/{poolId}",
+      "note": "Daily history for one pool; last element = latest. Good for per-vault live APY + sparkline. CORS-enabled."
+    },
+    "jupiterPriceV3": {
+      "url": "https://lite-api.jup.ag/price/v3?ids={mint1},{mint2}",
+      "note": "Returns {mint:{usdPrice,priceChange24h,decimals,liquidity}}; up to 50 ids. api.jup.ag/price/v3 also responded without key on 2026-11-03 but Jupiter recommends an API key for api.jup.ag."
+    },
+    "jupiterTokensV2": {
+      "url": "https://lite-api.jup.ag/tokens/v2/search?query={mintOrSymbol}",
+      "note": "Token metadata, icon, verification, mcap."
+    },
+    "defillamaCoinPrices": {
+      "url": "https://coins.llama.fi/prices/current/solana:{mint},solana:{mint2}",
+      "note": "No key; returns price, symbol, decimals."
+    },
+    "coingeckoSimplePrice": {
+      "url": "https://api.coingecko.com/api/v3/simple/price?ids={ids}&vs_currencies=usd",
+      "note": "Public tier rate-limited (~5-30 req/min); use coingeckoId fields."
+    },
+    "raydiumPoolsByMint": {
+      "url": "https://api-v3.raydium.io/pools/info/mint?mint1={mint}&poolType=all&poolSortField=default&sortType=desc&pageSize=5&page=1",
+      "note": "Pool tvl, day/week/month apr."
+    }
+  },
+  "spotPricesUsdAtResearch": {
+    "4vMsoUT2BWatFweudnQM1xedRLfJgJ7hswhcpz4xgBTy": 0.001855,
+    "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": 135.374758,
+    "BZLbGTNCSFfoth2GYDtwr7e4imWzpR5jqcUuGEwr646K": 0.123883,
+    "Dso1bDeDjCQxTrWHqUUi63oBvV7Mdm6WaobLbQ7gnPQ": 112.728595,
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": 0.999427,
+    "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB": 0.998116,
+    "Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs": 0.579078,
+    "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn": 121.37596,
+    "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN": 0.246677,
+    "So11111111111111111111111111111111111111112": 92.633644,
+    "hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux": 0.351437,
+    "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL": 0.349478,
+    "jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v": 112.845105,
+    "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So": 131.149478,
+    "mb1eu7TzEc71KxDpsmsKoucSSuuoGLv1drys1oP2jh6": 4.8e-05,
+    "nosXBVoaCTtYdLvKY6Csb4AC8JCdQKKAaWYtx2ZMoo7": 0.393231,
+    "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof": 1.514739
+  },
+  "spotPricesSource": "https://lite-api.jup.ag/price/v3 at 2026-11-03T13:11:32.833984Z"
+}
