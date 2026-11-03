@@ -108,9 +108,79 @@ export async function fetchPrices(): Promise<Record<string, PricePoint>> {
   return book;
 }
 
+let iconMemory: { at: number; icons: Record<string, string> } | null = null;
+let sparkMemory: { at: number; map: Record<string, number[]> } | null = null;
+
+async function fetchIcons(mints: string[]): Promise<Record<string, string>> {
+  if (iconMemory && Date.now() - iconMemory.at < 60 * 60 * 1000) return iconMemory.icons;
+  const icons: Record<string, string> = {};
+  const pending = [...new Set(mints)];
+  async function one(mint: string) {
+    try {
+      const response = await fetch(
+        `https://lite-api.jup.ag/tokens/v2/search?query=${encodeURIComponent(mint)}`,
+        { next: { revalidate: 3600 }, signal: AbortSignal.timeout(8000) },
+      );
+      if (!response.ok) return;
+      const data = (await response.json()) as Array<{ id?: string; icon?: string }>;
+      const hit = Array.isArray(data) ? data.find((token) => token.id === mint) : undefined;
+      if (hit?.icon) icons[mint] = hit.icon;
+    } catch {
+      // Initials stand in for a missing logo.
+    }
+  }
+  const workers = Array.from({ length: 6 }, async () => {
+    while (pending.length) {
+      const mint = pending.shift();
+      if (mint) await one(mint);
+    }
+  });
+  await Promise.all(workers);
+  iconMemory = { at: Date.now(), icons };
+  return icons;
+}
+
+function trendOf(values: number[]): "up" | "down" | "flat" | null {
+  if (values.length < 2) return null;
+  const delta = values[values.length - 1] - values[0];
+  if (Math.abs(delta) < 0.08) return "flat";
+  return delta > 0 ? "up" : "down";
+}
+
+async function fetchSparklines(poolIds: string[]): Promise<Record<string, number[]>> {
+  if (sparkMemory && Date.now() - sparkMemory.at < 300_000) return sparkMemory.map;
+  const map: Record<string, number[]> = {};
+  await Promise.all(
+    poolIds.map(async (id) => {
+      const points = await fetchChart(id);
+      const series = points.slice(-30).map((point) => point.apy);
+      if (series.length >= 2) map[id] = series;
+    }),
+  );
+  sparkMemory = { at: Date.now(), map };
+  return map;
+}
+
 export async function getMarkets(): Promise<MarketData> {
   const [live, prices] = await Promise.all([fetchLivePools(), fetchPrices()]);
-  return buildViews(live.ok ? live.pools : null, prices, live.ok);
+  const data = buildViews(live.ok ? live.pools : null, prices, live.ok);
+  const poolIds = data.vaults
+    .map((vault) => vault.poolId)
+    .filter((id): id is string => Boolean(id));
+  const [icons, sparks] = await Promise.all([
+    fetchIcons(data.vaults.map((vault) => vault.mint)),
+    fetchSparklines(poolIds),
+  ]);
+  data.vaults = data.vaults.map((vault) => {
+    const sparkline = vault.poolId ? (sparks[vault.poolId] ?? []) : [];
+    return {
+      ...vault,
+      iconUrl: icons[vault.mint] ?? null,
+      sparkline,
+      trend: trendOf(sparkline),
+    };
+  });
+  return data;
 }
 
 export async function fetchChart(poolId: string): Promise<ChartPoint[]> {

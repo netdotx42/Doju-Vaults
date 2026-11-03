@@ -73,6 +73,9 @@ export type VaultView = {
   aggregate: AggregateMode;
   jupiterFromSol: boolean;
   prefer30d: boolean;
+  iconUrl: string | null;
+  sparkline: number[];
+  trend: "up" | "down" | "flat" | null;
 };
 
 export type MarketData = {

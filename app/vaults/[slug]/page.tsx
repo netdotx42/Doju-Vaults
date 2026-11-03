@@ -3,15 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ApyChart } from "@/components/apy-chart";
 import { DepositPanel } from "@/components/deposit-panel";
+import { TokenLogo } from "@/components/token-logo";
 import { VAULTS } from "@/config/vaults";
 import { formatPct, formatUsd } from "@/lib/format";
 import { fetchChart, getMarkets } from "@/lib/live";
 
 export const dynamic = "force-dynamic";
-
-export function generateStaticParams() {
-  return VAULTS.map((vault) => ({ slug: vault.slug }));
-}
 
 export async function generateMetadata({
   params,
@@ -42,21 +39,24 @@ export default async function VaultPage({ params }: { params: Promise<{ slug: st
           : "Unavailable";
 
   return (
-    <main id="content" className="mx-auto max-w-6xl px-4 py-8">
-      <Link href="/#vaults" className="text-sm text-neutral-400">
+    <main id="content" className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+      <Link href="/#vaults" className="text-sm text-violet-300">
         All vaults
       </Link>
       <div className="mt-4 flex flex-wrap items-end justify-between gap-3">
-        <div>
-          <p className="text-sm uppercase tracking-wide text-brand">{vault.category}</p>
-          <h1 className="mt-1 text-4xl font-semibold">{vault.symbol}</h1>
-          <p className="text-neutral-400">{vault.name}</p>
+        <div className="flex items-center gap-3">
+          <TokenLogo symbol={vault.symbol} iconUrl={vault.iconUrl} size={48} />
+          <div>
+            <p className="text-sm uppercase tracking-wide text-violet-300">{vault.category}</p>
+            <h1 className="mt-1 text-4xl font-semibold">{vault.symbol}</h1>
+            <p className="text-neutral-400">{vault.name}</p>
+          </div>
         </div>
         <p className="text-4xl font-semibold text-brand">{vault.apyText}</p>
       </div>
       <p className="mt-2 text-sm text-neutral-500">{vault.apyCaption}</p>
       <p className="mt-4 max-w-2xl text-neutral-300">{vault.summary}</p>
-      <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_380px]">
+      <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,380px)]">
         <div className="order-2 space-y-4 lg:order-1">
           <dl className="grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
             <div className="rounded-2xl border border-neutral-800 p-3">

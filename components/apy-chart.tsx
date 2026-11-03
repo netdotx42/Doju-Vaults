@@ -1,6 +1,10 @@
+"use client";
+
+import { useId } from "react";
 import type { ChartPoint } from "@/lib/types";
 
 export function ApyChart({ points, caption }: { points: ChartPoint[]; caption: string }) {
+  const gradientId = useId().replace(/:/g, "");
   if (points.length < 2) {
     return (
       <p className="rounded-2xl border border-neutral-800 bg-neutral-950 p-4 text-sm text-neutral-400">
@@ -39,8 +43,14 @@ export function ApyChart({ points, caption }: { points: ChartPoint[]; caption: s
         aria-label={`APY history. Latest ${latest.apy.toFixed(2)} percent on ${latest.t}.`}
         className="h-52 w-full"
       >
-        <path d={area} fill="rgba(255,92,26,0.16)" />
-        <path d={line} fill="none" stroke="#ff5c1a" strokeWidth="2.5" />
+        <defs>
+          <linearGradient id={gradientId} x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="#c4b5fd" />
+            <stop offset="100%" stopColor="#ff5c1a" />
+          </linearGradient>
+        </defs>
+        <path d={area} fill="rgba(167,139,250,0.16)" />
+        <path d={line} fill="none" stroke={`url(#${gradientId})`} strokeWidth="2.5" />
       </svg>
       <div className="mt-2 flex justify-between text-xs text-neutral-500">
         <span>{points[0].t}</span>

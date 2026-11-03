@@ -534,8 +534,30 @@ export const VAULTS: VaultConfig[] = [
 
 export const CATEGORIES: { id: "all" | VaultConfig["category"]; label: string }[] = [
   { id: "all", label: "All" },
-  { id: "core", label: "Core" },
-  { id: "stable", label: "Stable" },
+  { id: "core", label: "Top Solana" },
+  { id: "stable", label: "Stablecoins" },
   { id: "rwa", label: "RWA" },
   { id: "depin", label: "DePIN" },
 ];
+
+export const SECTION_COPY: Record<
+  VaultConfig["category"],
+  { title: string; blurb: string }
+> = {
+  core: {
+    title: "Top Solana assets",
+    blurb: "SOL, liquid staking, and the tokens that actually pay.",
+  },
+  stable: {
+    title: "Stablecoins",
+    blurb: "USDC and USDT markets, including the jumpy ones shown as a 30-day average.",
+  },
+  rwa: {
+    title: "Real-world assets",
+    blurb: "Treasuries, credit, and funds. Whitelist products are view-only.",
+  },
+  depin: {
+    title: "DePIN",
+    blurb: "Network rewards. Unpublished rates stay labeled that way.",
+  },
+};

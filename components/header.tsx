@@ -11,20 +11,20 @@ export function Header() {
       >
         Skip to content
       </a>
-      <header className="border-b border-neutral-900 bg-black/95">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
+      <header className="border-b border-neutral-900 bg-black/95 pt-[env(safe-area-inset-top)]">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <div>
             <Link href="/" className="text-lg font-semibold tracking-tight">
-              Doju <span className="text-brand">Vaults</span>
+              Doju <span className="gradient-word">Vaults</span>
             </Link>
             <nav className="mt-1 flex gap-4 text-sm text-neutral-400" aria-label="Primary">
-              <Link href="/" className="hover:text-white">
+              <Link href="/" className="inline-flex h-11 items-center hover:text-white">
                 Vaults
               </Link>
-              <Link href="/portfolio" className="hover:text-white">
+              <Link href="/portfolio" className="inline-flex h-11 items-center hover:text-white">
                 Portfolio
               </Link>
-              <Link href="/terms" className="hover:text-white">
+              <Link href="/terms" className="inline-flex h-11 items-center hover:text-violet-200">
                 Risks
               </Link>
             </nav>
